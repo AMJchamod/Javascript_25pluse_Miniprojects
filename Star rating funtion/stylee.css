@@ -1,0 +1,10 @@
+.star {
+    font-size: 2rem;   /* Size of the stars */
+    cursor: pointer;   /* Cursor changes to pointer when hovering over stars */
+    color: grey;       /* Default color of stars */
+}
+
+.star.hovered,
+.star.selected {
+    color: gold;       /* Color when stars are hovered over or selected */
+}
