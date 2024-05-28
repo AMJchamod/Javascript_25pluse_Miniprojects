@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentRating = 0;
 
     // Add event listeners to each star
-    stars.forEach((star, index) => {
+    stars.forEach((star,inde ) => {
         star.addEventListener('mouseover', function () {
-            highlightStars(index + 1);  // Highlight stars up to the one being hovered over
+            highlightStars(inde + 1);  // Highlight stars up to the one being hovered over
         });
 
         star.addEventListener('mouseout', function () {
@@ -13,15 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         star.addEventListener('click', function () {
-            currentRating = index + 1;  // Set the current rating to the clicked star's value
+            currentRating = inde + 1;  // Set the current rating to the clicked star's value
             updateRating(currentRating);  // Update the rating display
         });
     });
 
     function highlightStars(rating) {
         // Highlight stars up to the specified rating
-        stars.forEach((star, index) => {
-            if (index < rating) {
+        stars.forEach((star, inde) => {
+            if (inde < rating) {
                 star.classList.add('hovered');
             } else {
                 star.classList.remove('hovered');
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateRating(rating) {
         // Update the displayed rating and highlight the stars up to the rating
         document.getElementById('rating-value').textContent = `Rating: ${rating}`;
-        stars.forEach((star, index) => {
-            if (index < rating) {
+        stars.forEach((star, inde) => {
+            if (inde < rating) {
                 star.classList.add('selected');
             } else {
                 star.classList.remove('selected');
