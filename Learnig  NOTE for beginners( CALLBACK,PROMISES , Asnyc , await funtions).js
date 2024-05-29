@@ -37,7 +37,7 @@ takeoutrach();
 */
 //   handle with   promises🤞
 
-
+/*
 function walkdog() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -97,3 +97,79 @@ walkdog().then(value => { console.log(value); return cleankitchen() })
          .then(value=>{console.log(value); return trashout()})
          .then(value=>{console.log(value);console.log("you finsh your works")})
          .catch(error=>{console.log(error);});
+*/
+
+/*
+         //  WE  can do this task  more   felxible way using Async / await
+          * /Async = Makes a function return a promise
+             Await = makes an async funtion  wait for a promise
+
+             Allows you write asynchronous code in a synchronus manner
+             async dosent have resolve or reject parameters
+             Everything after Await is placed in an event queue
+             
+            */
+           //👨‍💻Let's see how it do
+/* 
+async function walkdog() {
+
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+
+            const walk = true;
+            if (walk) {
+                resolve("good boy dog so happy");
+            } else {
+                reject(" lazy man go for a walk");
+            }
+        }, 600);
+
+    });
+
+}
+
+
+async function cleankitchen() {
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            const clean = true;
+            if (clean) {
+                resolve("good job u are clean boy");
+            } else {
+                reject("pleace clean ur kitchen");
+            }
+
+        }, 500);
+    });
+}
+
+async function trashout(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            const trash=true;
+            if (trash){
+                resolve("ur are  really good boy");
+            }else{
+                reject(" plase go out and trow the trash");
+            }
+
+        },100);
+    });
+}
+
+async function doit(){
+    try{
+
+        const walkresult=await walkdog();
+        console.log(walkresult);
+        const cleankitchenresult=await cleankitchen();
+        console.log(cleankitchenresult);
+        const trashresult =await trashout(); 
+        console.log(trashresult);
+    }catch(error){
+        console.error(error);
+    }
+}
+
+
+doit();
