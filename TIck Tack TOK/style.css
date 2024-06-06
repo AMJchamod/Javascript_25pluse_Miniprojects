@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: black;
+}
+h1{
+      
+      text-align: center;
+      color: whitesmoke;
+}
+
+.tickbord{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+     width: 550px;
+     height: 550px;
+     gap: 6vh;
+     padding-left: 8vh;
+     
+     
+}
+.squres{
+    width: 145px;
+    height:145px;
+    border:1px solid white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: auto;
+
+}
+
+.massage{
+    width: 30vh;
+     height: 5vh;
+     border: 1px rosybrown solid;
+     position: relative;   
+   
+    bottom: 70px;
+  
+     margin-left: 10vh;
+    
+}
+.resetbutton{
+      color:red;
+      background-color: whitesmoke;
+      width:100px;
+      height: 40PX;
+      margin-left: 100vh;
+      border: 1px solid white;
+
+}
