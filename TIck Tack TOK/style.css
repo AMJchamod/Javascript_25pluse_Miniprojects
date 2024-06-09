@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: black;
+    background-color:black;
 }
 h1{
       
@@ -22,7 +22,7 @@ h1{
      
      
 }
-.squres{
+.square{
     width: 145px;
     height:145px;
     border:1px solid white;
@@ -30,6 +30,7 @@ h1{
     align-items: center;
     display: flex;
     margin-top: auto;
+    cursor:pointer;
 
 }
 
@@ -38,6 +39,7 @@ h1{
      height: 5vh;
      border: 1px rosybrown solid;
      position: relative;   
+     color:red;
    
     bottom: 70px;
   
