@@ -3,6 +3,8 @@
     padding:0;
     box-sizing: border-box;
     background-color:black;
+    
+
 }
 h1{
       
@@ -19,6 +21,9 @@ h1{
      height: 550px;
      gap: 6vh;
      padding-left: 8vh;
+     background-size: cover;
+    background: url(https://www.behance.net/gallery/133415987/Relax);
+    background-repeat: no-repeat;
      
      
 }
@@ -31,6 +36,12 @@ h1{
     display: flex;
     margin-top: auto;
     cursor:pointer;
+    display: transpater;
+
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
+  padding: 20px; /* Add padding to see the effect */
+  border: 1px solid #000; /* Optional: Add a border to see the div */
+}
 
 }
 

@@ -42,6 +42,8 @@ for (let i = 0; i < squares.length; i++) {
 
     if (checkTieResult()) {
       message.textContent = `Game tied ! Please restart`;
+   
+
       return;
     }
 
@@ -74,6 +76,7 @@ function checkWinner(currentPlayer) {
 }
 
 function checkTieResult() {
+
   for (let i = 0; i < squares.length; i++) {
     if (squares[i].textContent === "") {
       return false;
@@ -93,5 +96,6 @@ function restartGame() {
 }
 
 restartBtn.addEventListener("click", () => {
+    alert('Do you want to play again?');
   restartGame();
 });
