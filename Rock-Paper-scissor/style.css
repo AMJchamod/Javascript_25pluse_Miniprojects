@@ -1,0 +1,18 @@
+.gamecontainer{
+    justify-content: center;
+     display: flex;
+     gap: 5vh;
+     
+}
+
+button{
+    width: 20vh;
+    height: 10vh;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: inset;
+}
+
+button:hover{
+    background-color: aqua;
+}
